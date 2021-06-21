@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    
+  }
+  
+  body{
+    backgroud-color: #778DA9;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    
+  }
+  
+  nav{
+    background-color: #415A77;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 100;
+    
+  }
+  
+  nav a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  nav a:hover{
+    text-decoration: underline;
+  }
+  header{
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  header::after{
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+  }
+  
+  header * {
+    position: relative;
+    z-index: 1;
+  }
+  header h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  header p{
+    fornt-size: 30px;
+    margin: 0;
+  }
+  section{
+    text-align: center;
+    padding: 40px;
+    background-color: #D7D9D4;
+    
+  }
+  section h2{
+    margin-bottom: 0;
+  }
+  
+  section p{
+    margin-top: 0;
+  }
+  .projects-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 810px;
+    margin: 20px auto 0;
+    
+    
+  }
+  .project-tile{
+    margin: 10px;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+    
+  }
+  .project-tile:hover{
+    transform: scale(1.05);
+  }
+  .project-tile img{
+    max-width: 100%;
+  }
+  .project-tile p{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .bg-blue{
+    background-color: #778DA9;
+    color: white;
+  }
+  .social-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .social-ul a{
+      font-size: 30px;
+      border-radius: 50%;
+    
+      margin: 0 10px;
+  }
+  
+  footer{
+    background-color: #415A77;
+    color: white;
+    padding: 10px;
+    text-align: center
+  }
+  @media (max-width: 440px){
+    section{
+      padding: 20px;
+    }
+  }
+  
